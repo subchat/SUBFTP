@@ -51,7 +51,7 @@ python subftp.py -l ip_list.txt -w wordlist.txt -o output.txt -t 10
   
 
 ### Example
-![Screenshot 2024-08-27 205231](https://github.com/user-attachments/assets/00e9b383-d98a-4c1f-bbec-b5511bab0d13)
+  ![Screenshot 2024-08-27 205231](https://github.com/user-attachments/assets/00e9b383-d98a-4c1f-bbec-b5511bab0d13)
 
 Brute force a single IP with a custom wordlist:
 
