@@ -12,37 +12,22 @@ SUBFTP - TOOL is a command-line utility for performing FTP brute force attacks o
 - **Output to file:** Save results to an output file for later review.
 
 ## Banner
+![Screenshot 2024-08-27 203653](https://github.com/user-attachments/assets/bcafb233-610d-46ee-9872-fc73fafd010f)
 
-```text
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@         %   @@@@@@   ,         @@,                             &@@@@@@@@
-@@@@@@    @@@@ @%   @@@@@@   ,    @@    @,   @@@@@@@@@    @@@    @@@     @@@@@@@
-@@@@@@     %@@@@%   @@@@@@   ,    @*    @,   @@@@@@@@@    @@@    @@@@    @@@@@@@
-@@@@@@@@*      ,%   @@@@@@   ,          %,        .@@@    @@@          *@@@@@@@@
-@@@@@@@@@@@@&       /@@@@%   ,    @@@%       @@@@@@@@@    @@@    @@@@@@@@@@@@@@@
-@@@@@           #            @    ,.     ,   @@@@@@@@@    @@@    @@@@@@@@@@@@@@@
-@@@@@@@       @@@@@(      *@@@        *@@,   @@@@@@@@@    @@@    @@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                                      -coded By SubSec
-```
+
 
 ## Installation
 
 Clone the repository:
 
-```bash
+```
 git clone https://github.com/subchat/SUBFTP.git
-cd FTPTOOL
+cd SUBFTP
 ```
 
 Make sure you have Python 3 installed, then install any required packages (if necessary):
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
@@ -50,7 +35,7 @@ pip install -r requirements.txt
 
 ### Basic Usage
 
-```bash
+```
 python subftp.py -l ip_list.txt -w wordlist.txt -o output.txt -t 10
 ```
 
@@ -61,19 +46,23 @@ python subftp.py -l ip_list.txt -w wordlist.txt -o output.txt -t 10
 - `-w, --wordlist`: File containing username:password combinations for brute force attempts.
 - `-o, --output`: Output file to save the results.
 - `-t, --threads`: Number of concurrent threads (default: 10).
+![Screenshot 2024-08-27 203754](https://github.com/user-attachments/assets/7de9b8ba-a5b4-4e7e-ba7d-2206994cf9bb)
+
+  
 
 ### Example
+![Screenshot 2024-08-27 205231](https://github.com/user-attachments/assets/00e9b383-d98a-4c1f-bbec-b5511bab0d13)
 
 Brute force a single IP with a custom wordlist:
 
-```bash
-python ftptool.py -ip 192.168.1.1 -w wordlist.txt -o output.txt -t 5
+```
+python subftp.py -ip 192.168.1.1 -w wordlist.txt -o output.txt -t 5
 ```
 
 Brute force a list of IPs with the default anonymous login:
 
-```bash
-python ftptool.py -l ip_list.txt -o output.txt -t 10
+```
+python subftp.py -l ip_list.txt -o output.txt -t 10
 ```
 
 ## Output
